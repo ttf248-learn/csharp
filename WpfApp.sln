@@ -5,11 +5,13 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{1FAFA97E-9820-4C0C-9D05-2C48A9F0F0F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp-01-WithoutMain", "ConsoleApp-01-WithoutMain\ConsoleApp-01-WithoutMain.csproj", "{84C1F8D0-25FF-4EB4-A7F0-6F74EDD75098}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp-01-WithoutMain", "ConsoleApp-01-WithoutMain\ConsoleApp-01-WithoutMain.csproj", "{84C1F8D0-25FF-4EB4-A7F0-6F74EDD75098}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp-02-Main", "ConsoleApp-02-Main\ConsoleApp-02-Main.csproj", "{57ED47D6-38A0-44D6-AC10-4669360FDF7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp-02-Main", "ConsoleApp-02-Main\ConsoleApp-02-Main.csproj", "{57ED47D6-38A0-44D6-AC10-4669360FDF7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp-03-Rectangle", "ConsoleApp-03-Rectangle\ConsoleApp-03-Rectangle.csproj", "{DD45F8B7-2B8F-4F69-936C-F3EE6EB062D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp-03-Rectangle", "ConsoleApp-03-Rectangle\ConsoleApp-03-Rectangle.csproj", "{DD45F8B7-2B8F-4F69-936C-F3EE6EB062D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp-04-DataType", "ConsoleApp-04-DataType\ConsoleApp-04-DataType.csproj", "{07BFB245-48E1-4AEC-8415-AC6BB4206A11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DD45F8B7-2B8F-4F69-936C-F3EE6EB062D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD45F8B7-2B8F-4F69-936C-F3EE6EB062D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD45F8B7-2B8F-4F69-936C-F3EE6EB062D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07BFB245-48E1-4AEC-8415-AC6BB4206A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07BFB245-48E1-4AEC-8415-AC6BB4206A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07BFB245-48E1-4AEC-8415-AC6BB4206A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07BFB245-48E1-4AEC-8415-AC6BB4206A11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
