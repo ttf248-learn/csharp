@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp-05-ExplicitConve
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp-06-ConstTest", "ConsoleApp-06-ConstTest\ConsoleApp-06-ConstTest.csproj", "{C68D6AB2-5F3A-45D4-A0C7-24AAD39515FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp-07-Struct", "ConsoleApp-07-Struct\ConsoleApp-07-Struct.csproj", "{A900FE60-E75E-46C3-AFB8-D944436E4B81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp-07-Struct", "ConsoleApp-07-Struct\ConsoleApp-07-Struct.csproj", "{A900FE60-E75E-46C3-AFB8-D944436E4B81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp-08-Properties", "ConsoleApp-08-Properties\ConsoleApp-08-Properties.csproj", "{54DCD12C-4048-41FD-A4BB-C01AE5157488}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp-08-Properties", "ConsoleApp-08-Properties\ConsoleApp-08-Properties.csproj", "{54DCD12C-4048-41FD-A4BB-C01AE5157488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXApplicationDataEdit", "DXApplicationDataEdit\DXApplicationDataEdit.csproj", "{144670CB-6396-488C-A76D-2E03A3B69E78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{54DCD12C-4048-41FD-A4BB-C01AE5157488}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54DCD12C-4048-41FD-A4BB-C01AE5157488}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54DCD12C-4048-41FD-A4BB-C01AE5157488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{144670CB-6396-488C-A76D-2E03A3B69E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144670CB-6396-488C-A76D-2E03A3B69E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144670CB-6396-488C-A76D-2E03A3B69E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144670CB-6396-488C-A76D-2E03A3B69E78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
