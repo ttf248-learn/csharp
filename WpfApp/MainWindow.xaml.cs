@@ -1,59 +1,47 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Windows;
+using System.Windows.Controls;
 
-namespace YearComboBox
+namespace CalendarApp
 {
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new YearComboBoxViewModel();
+            InitializeYearComboBox();
+            InitializeCalendars();
         }
-    }
 
-    public class YearComboBoxViewModel : INotifyPropertyChanged
-    {
-        public YearComboBoxViewModel()
+        private void InitializeYearComboBox()
         {
-            // 初始化下拉框数据
-            Years = new List<YearItem>();
-            int currentYear = DateTime.Now.Year;
-
-            for (int i = currentYear - 10; i <= currentYear + 10; i++)
+            for (int year = DateTime.Now.Year - 1; year <= DateTime.Now.Year + 1; year++)
             {
-                Years.Add(new YearItem { Year = i });
+                YearComboBox.Items.Add(year);
             }
-
-            SelectedYear = Years[10]; // 初始选择当前年份
+            YearComboBox.SelectedIndex = 1; // Select the current year
+            YearComboBox.SelectionChanged += YearComboBox_SelectionChanged;
         }
 
-        private YearItem selectedYear;
-
-        public YearItem SelectedYear
+        private void InitializeCalendars()
         {
-            get { return selectedYear; }
-            set
+            for (int month = 1; month <= 12; month++)
             {
-                selectedYear = value;
-                OnPropertyChanged("SelectedYear");
+                var monthCalendar = new Calendar();
+                monthCalendar.DisplayDate = new DateTime(DateTime.Now.Year, month, 1);
+                CalendarItems.Items.Add(monthCalendar);
             }
         }
 
-        public List<YearItem> Years { get; set; }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected void OnPropertyChanged(string propertyName)
+        private void YearComboBox_SelectionChanged(object sender, RoutedEventArgs e)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-    }
+            int selectedYear = (int)YearComboBox.SelectedItem;
 
-    public class YearItem
-    {
-        public int Year { get; set; }
+            for (int i = 0; i < 12; i++)
+            {
+                var monthCalendar = CalendarItems.Items[i] as Calendar;
+                monthCalendar.DisplayDate = new DateTime(selectedYear, i + 1, 1);
+            }
+        }
     }
 }
