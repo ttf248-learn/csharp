@@ -21,7 +21,7 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Calendar Name="MonthCalendar" DisplayMode="Month" IsTodayHighlighted="False" DisplayDateStart="1/1/2023" DisplayDateEnd="12/31/2023" IsEnabled="False"/>
+                        <Calendar Name="MonthCalendar" DisplayMode="Month" IsTodayHighlighted="True" IsEnabled="False"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>

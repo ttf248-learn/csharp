@@ -45,23 +45,28 @@ namespace CalendarApp
                 var monthCalendar = CalendarItems.Items[i] as Calendar;
                 monthCalendar.DisplayDate = new DateTime(selectedYear, i + 1, 1);
 
-                // 自定义日期的背景色
-                for (int day = 1; day <= DateTime.DaysInMonth(selectedYear, i + 1); day++)
+                CustomCalendarButtonStyle(selectedYear, i + 1, monthCalendar);
+            }
+        }
+
+        private void CustomCalendarButtonStyle(int year, int month, Calendar monthCalendar)
+        {
+            // 自定义日期的背景色
+            for (int day = 1; day <= DateTime.DaysInMonth(year, month); day++)
+            {
+                DateTime date = new DateTime(year, month, day);
+                CalendarDayButton dayButton = GetCalendarDayButton(monthCalendar, date);
+                if (dayButton != null)
                 {
-                    DateTime date = new DateTime(selectedYear, i + 1, day);
-                    CalendarDayButton dayButton = GetCalendarDayButton(monthCalendar, date);
-                    if (dayButton != null)
+                    if (date.DayOfWeek == DayOfWeek.Saturday || date.DayOfWeek == DayOfWeek.Sunday)
                     {
-                        if (date.DayOfWeek == DayOfWeek.Saturday || date.DayOfWeek == DayOfWeek.Sunday)
-                        {
-                            // 周末，背景色为白色 (D)
-                            dayButton.Background = Brushes.White;
-                        }
-                        else
-                        {
-                            // 周一到周五，背景色为蓝色 (A)
-                            dayButton.Background = Brushes.LightBlue;
-                        }
+                        // 周末，背景色为白色 (D)
+                        dayButton.Background = Brushes.White;
+                    }
+                    else
+                    {
+                        // 周一到周五，背景色为蓝色 (A)
+                        dayButton.Background = Brushes.LightBlue;
                     }
                 }
             }
