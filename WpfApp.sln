@@ -27,9 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp-10-Delegates", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp-11-Lambda", "ConsoleApp-11-Lambda\ConsoleApp-11-Lambda.csproj", "{0381E2EE-A1F8-4391-A570-197C59FDAB82}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wpf-02-gpt-全自定义 mvvm", "MVVM增删改查\wpf-02-gpt-全自定义 mvvm.csproj", "{AD1A58AA-F4AC-4103-B51B-D4D8B1572AD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp01TemplateBatchDrawCalendar", "WpfApp01TemplateBatchDrawCalendar\WpfApp01TemplateBatchDrawCalendar.csproj", "{1FAFA97E-9820-4C0C-9D05-2C48A9F0F0F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp-01模板批量绘制日历", "WpfApp-01模板批量绘制日历\WpfApp-01模板批量绘制日历.csproj", "{1FAFA97E-9820-4C0C-9D05-2C48A9F0F0F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp02ImplementMVVMFromScratch", "WpfApp02ImplementMVVMFromScratch\WpfApp02ImplementMVVMFromScratch.csproj", "{D4D43793-022C-48A4-A4D3-5E2EB3BC35A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,14 +85,14 @@ Global
 		{0381E2EE-A1F8-4391-A570-197C59FDAB82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0381E2EE-A1F8-4391-A570-197C59FDAB82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0381E2EE-A1F8-4391-A570-197C59FDAB82}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD1A58AA-F4AC-4103-B51B-D4D8B1572AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD1A58AA-F4AC-4103-B51B-D4D8B1572AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD1A58AA-F4AC-4103-B51B-D4D8B1572AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD1A58AA-F4AC-4103-B51B-D4D8B1572AD7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1FAFA97E-9820-4C0C-9D05-2C48A9F0F0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1FAFA97E-9820-4C0C-9D05-2C48A9F0F0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FAFA97E-9820-4C0C-9D05-2C48A9F0F0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FAFA97E-9820-4C0C-9D05-2C48A9F0F0F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D43793-022C-48A4-A4D3-5E2EB3BC35A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D43793-022C-48A4-A4D3-5E2EB3BC35A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D43793-022C-48A4-A4D3-5E2EB3BC35A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D43793-022C-48A4-A4D3-5E2EB3BC35A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
