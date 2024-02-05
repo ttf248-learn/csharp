@@ -19,6 +19,21 @@ namespace WpfApp04GridNest
         public MainWindow()
         {
             InitializeComponent();
+
+            // 获取 ComboBox 的编辑框 TextBox 控件
+            TextBox? editableTextBox = nameCombobox.Template.FindName("PART_EditableTextBox", nameCombobox) as TextBox;
+
+            // 检查是否找到了 TextBox
+            if (editableTextBox != null)
+            {
+                // 修改 TextBox 的背景颜色
+                editableTextBox.Background = new SolidColorBrush(Colors.LightBlue);
+            }
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

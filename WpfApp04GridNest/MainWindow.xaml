@@ -34,6 +34,30 @@
             <GridSplitter Grid.Row="0" HorizontalAlignment="Right" Width="10" />
             <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="10" />
         </Grid>
+        <ComboBox x:Name="nameCombobox"  Background="LightGray" HorizontalAlignment="Left" Margin="64,54,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" IsEditable="True">
+            <ComboBox.Template>
+                <ControlTemplate TargetType="ComboBox">
+                    <Grid>
+                        <!-- 其他控件模板元素 -->
+
+                        <!-- 编辑框部分 -->
+                        <TextBox x:Name="PART_EditableTextBox"
+                                 Background="Red"
+                                 Foreground="{TemplateBinding Foreground}"
+                                 IsReadOnly="{TemplateBinding IsReadOnly}"
+                                 HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                 VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                 SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                 Padding="{TemplateBinding Padding}"
+                        />
+                    </Grid>
+                </ControlTemplate>
+            </ComboBox.Template>
+            <ComboBox.Resources>
+                <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="WhiteSmoke" />
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Gray" />
+            </ComboBox.Resources>
+        </ComboBox>
     </Grid>
 
 </Window>
