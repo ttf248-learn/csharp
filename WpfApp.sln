@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp03DependencyProperty"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp04GridNest", "WpfApp04GridNest\WpfApp04GridNest.csproj", "{617DF81A-9DCA-43DB-B3AA-1BBABCC7C7EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXApplicationGridControl", "DXApplicationGridControl\DXApplicationGridControl.csproj", "{6F131DD5-F902-48DE-A0BE-D86EE854BBA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DXApplicationGridControl", "DXApplicationGridControl\DXApplicationGridControl.csproj", "{6F131DD5-F902-48DE-A0BE-D86EE854BBA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp05UIThread", "WpfApp05UIThread\WpfApp05UIThread.csproj", "{DCB8A82D-381C-432A-924E-4B46FB5B65CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{6F131DD5-F902-48DE-A0BE-D86EE854BBA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F131DD5-F902-48DE-A0BE-D86EE854BBA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F131DD5-F902-48DE-A0BE-D86EE854BBA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB8A82D-381C-432A-924E-4B46FB5B65CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB8A82D-381C-432A-924E-4B46FB5B65CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB8A82D-381C-432A-924E-4B46FB5B65CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB8A82D-381C-432A-924E-4B46FB5B65CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
